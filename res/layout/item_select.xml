@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+       
+      <ImageButton
+          android:id="@+id/imagebtn"
+          android:scaleType="fitXY"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_alignParentLeft="true"
+          android:focusable="false"
+          android:background="@null"
+           
+          android:src="@drawable/clock_off" />
+
+   	   	<TextView
+   	   	    android:id="@+id/name"
+   	   	    android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content"
+   	   	    android:layout_alignBottom="@+id/imagebtn"
+   	   	    android:layout_alignTop="@+id/imagebtn"
+   	   	    android:layout_toLeftOf="@+id/chkDone"
+   	   	    android:layout_toRightOf="@+id/imagebtn"
+   	   	    android:focusable="false"
+   	   	    android:textSize="20dp"
+   	   	    
+   	   	    android:textStyle="bold" />
+
+   	   	<TextView
+   	   	    
+   	   	    android:id="@+id/textView1"
+   	   	    android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content"
+   	   	    android:layout_alignLeft="@+id/imagebtn"
+   	   	    android:layout_below="@+id/imagebtn"
+   	   	    android:focusable="false"
+   	   	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   	   	
+
+   	   	<CheckBox
+   	   	    
+   	   	    android:id="@+id/chkDone"
+   	   	    android:focusable="false"
+   	   	    android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content"
+   	   	    android:layout_alignParentRight="true"
+   	   	    android:layout_alignTop="@+id/name"
+   	   	    android:layout_marginRight="20dp"
+   	   	      />
+
+   	   	<ImageView
+   	   	    android:id="@+id/ivLoc"
+   	   	    android:visibility="invisible"
+   	   	    android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content"
+   	   	    android:layout_alignLeft="@+id/chkDone"
+   	   	    android:layout_alignRight="@+id/chkDone"
+   	   	    android:layout_below="@+id/chkDone"
+   	   	    android:src="@drawable/loc" />
+          
+</RelativeLayout>

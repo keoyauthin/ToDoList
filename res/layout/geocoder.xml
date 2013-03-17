@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+     
+    <TextView android:id="@+id/Lable" android:textStyle="bold"
+        android:gravity="left" android:text="Enter address"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"></TextView>
+    <EditText android:id="@+id/editbox"
+        android:lines="2" android:maxLength="200" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:textSize="18sp"/>
+    <Button android:text="PreView" android:id="@+id/Button"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+</LinearLayout>
